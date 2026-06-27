@@ -1,30 +1,45 @@
 # Little Valley Days Static Website
 
-This is a simple static website for GitHub Pages.
+This is a simple static website built for GitHub Pages.
 
 ## Files
 
 - `index.html` — Weeknight Schedule page
 - `saturday.html` — Saturday Schedule page
-- `style.css` — all colors, fonts, spacing, and card styles
-- `script.js` — keeps only one accordion open at a time
+- `style.css` — all colors, spacing, buttons, cards, and mobile styles
+- `script.js` — smooth accordion animations and back-to-top button
 - `images/` — website images
 
-## How to publish on GitHub Pages
+## Publishing on GitHub Pages
 
-1. Create a new GitHub repository.
-2. Upload every file and folder from this package into the repository root.
-3. Go to Settings → Pages.
-4. Under "Build and deployment," choose: Deploy from a branch.
-5. Choose branch: `main`, folder: `/root`.
-6. Save.
+Upload the contents of this folder to your repository root. In GitHub, go to Settings → Pages → Deploy from a branch → `main` → `/root`.
 
-GitHub will give you a temporary address first. After it is working, you can connect `littlevalleydays.com` in the Pages settings.
+## Editing events
 
-## How to edit events
+Open `index.html` or `saturday.html` and search for the event name. Each event is inside a clearly labeled block like:
 
-Open `index.html` or `saturday.html` and search for the event name. Edit the text between that event's `<details class="event">` and `</details>` section.
+```html
+<details class="event">
+  <summary>...</summary>
+  <div class="event-body">
+    ...event text...
+  </div>
+</details>
+```
+
+Edit only the text, links, dates, and phone numbers inside each event unless you want to change the design.
+
+## Design notes
+
+The site keeps the original Little Valley Days look and feel, but adds:
+
+- smoother accordion animations
+- better mobile spacing
+- cleaner typography using system fonts for faster loading
+- nicer button hover states
+- a back-to-top button on long pages
+- accessibility improvements like focus outlines and a skip link
 
 ## Important
 
-The Saturday page was recreated from a PDF image. Please proofread it before publishing, especially dates, registration instructions, and phone numbers.
+The Saturday page was recreated from a PDF image. Please proofread it before publishing, especially dates, registration instructions, links, and phone numbers.
