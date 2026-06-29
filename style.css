@@ -125,12 +125,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible{
 }
 .button:active{transform:translateY(1px);box-shadow:none}
 .button i.fa-caret-right{color:var(--red);font-size:1.2rem;padding-left:4px}
-.nav-strip .button {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    z-index: 10;
-}
+
 .page{padding:22px 0 0}
 .container{width:min(980px,92vw);margin:0 auto}
 .hint{text-align:center;color:var(--muted);font-size:16px;margin:8px 0 20px}
